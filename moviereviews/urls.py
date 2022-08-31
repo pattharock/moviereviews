@@ -23,8 +23,8 @@ from movie import views as movieViews
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', movieViews.home),
-    path('about/', movieViews.about, name="home"),
+    path('', movieViews.home, name="home"),
+    path('about/', movieViews.about),
     path('signup/', movieViews.signup, name="signup"),
     path('news/', include('news.urls')),
     path('movie/', include('movie.urls')),

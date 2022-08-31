@@ -133,4 +133,6 @@ STATICFILES_DIRS = [
     BASE_DIR / 'moviereviews/static',
 ]
 
+LOGIN_URL = 'loginaccount'
+
 
